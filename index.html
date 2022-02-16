@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let k = prompt(' nhập giá trị bạn cần tìm');
+    let num = [-3, 5, 4, 6, 8, 10, 12, 10];
+    let text = 0;
+    for (let j = 0; j < num.length; j++) {
+        text = num[j]
+        console.log('giá trị     '+text+'  tại chỉ số    '+j)
+    }
+    for (let i = 0; i < num.length; i++) {
+
+        if (k == num[i]) {
+            alert(num[i] + ' có trong mảng và nằm ở vị trí ' + i);
+            console.log('giá trị '+num[i]+ '  nằm ở vị trí=====' +i);
+        }
+        if (i == num.length - 1 && k != num[i]) {
+            alert(' không còn giá trị cần tìm nào nằm trong mảng');
+            break;
+        }
+    }
+
+
+
+
+
+</script>
+</html>
